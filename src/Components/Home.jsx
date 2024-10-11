@@ -31,45 +31,26 @@ const Home = () => {
       </Helmet>
       {/*---join the green revolution section---*/}
       <div className="bg-[#fff6c0] py-[5%] ">
-        <div className="flex max-[1100px]:flex-col mx-[5%] min-h-[22rem]">
-          <div className="w-1/3 max-[1100px]:w-full bg-[#FFD36D] p-6 rounded-l-2xl  flex flex-col">
-            <h1 className="font-[600] leading-[44px] text-[35px] text-[#4348BD] mb-6 max-[600px]:text-[25px] max-[600px]:leading-0 max-[600px]:mb-2">
+        <div className="grid grid-cols-[1fr_2fr] max-[1000px]:grid-cols-1 mx-[5%] h-full">
+          <div className="bg-[#FFD36D] p-6 rounded-l-2xl flex flex-col justify-center">
+            <h1 className="font-[600] leading-[44px] text-[35px] text-[#4348BD] mb-6 max-[600px]:text-[25px] max-[600px]:leading-[30px] max-[600px]:mb-2">
               Join The Green Revolution
             </h1>
-            <p className=" text-[#133819] pr-12 text-[24px] font-[500px] leading-[36px] max-[600px]:text-[18px] max-[600px]:leading-0">
+            <p className="text-[#133819] pr-12 text-[24px] font-[500] leading-[36px] max-[600px]:text-[18px] max-[600px]:leading-[28px]">
               Empowering Communities with Sustainable Solar Solutions
             </p>
           </div>
-          <div className="w-2/3 max-[1100px]:w-full  ">
-            {/* <Slider {...settings} className="w-full"> */}
-            <div className="w-full ">
-              <div className="relative w-full mb-[-6px]">
-                <img src={herobg} className="w-full h-auto" alt="Slide 1" />
-
-                <div className="absolute bottom-0 left-0 right-0 bg-[rgba(13,13,13,0.5)]">
-                  <h1 className="text-[16px] font-bold  text-center text-white rounded-br-3xl leading-[4rem] pb-3 max-[600px]:leading-[2rem]">
-                    Transition to a Green Future with us
-                  </h1>
-                </div>
-              </div>
-              {/* <div className="relative w-full  mb-[-6px]">
-                <img src={herobg} className="w-full h-auto" alt="Slide 2" />
-                <div className="absolute bottom-0 left-0 right-0 bg-[rgba(13,13,13,0.5)]">
-                  <h1 className="text-[16px] font-bold  text-center text-white rounded-br-3xl leading-[4rem] pb-3  max-[600px]:leading-[2rem]">
-                    Transition to Green Future with us
-                  </h1>
-                </div>
-              </div>
-              <div className="relative w-full  mb-[-6px]">
-                <img src={herobg} className="w-full h-auto" alt="Slide 3" />
-                <div className="absolute bottom-0 left-0 right-0 bg-[rgba(13,13,13,0.5)]">
-                  <h1 className="text-[16px] font-bold  text-center text-white   rounded-br-3xl leading-[4rem] pb-3  max-[600px]:leading-[2rem]">
-                    Transition to Green Future with us
-                  </h1>
-                </div>
-              </div> */}
+          <div className="relative rounded-br-3xl overflow-hidden">
+            <img
+              src={herobg}
+              className="w-full h-full object-cover"
+              alt="Slide 1"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-[rgba(13,13,13,0.5)]">
+              <h1 className="text-[16px] font-bold text-center text-white rounded-br-3xl   leading-[4rem] pb-3 max-[600px]:leading-[2rem]">
+                Transition to a Green Future with us
+              </h1>
             </div>
-            {/* </Slider> */}
           </div>
         </div>
       </div>
